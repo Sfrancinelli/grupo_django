@@ -16,5 +16,9 @@ def sign(request):
     return render(request, 'sign.html')
 
 
+def error404(request):
+    return render(request, 'components/404.html')
+
+
 def docentes(request):
     return HttpResponse("<h1>Solución temporal!!</h1>")

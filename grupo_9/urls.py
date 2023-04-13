@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('sign/', views.sign, name='sign'),
+    path('error404/', views.error404, name='404'),
     path('fines/', include('fines.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
